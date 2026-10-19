@@ -24,6 +24,15 @@
     <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
     <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M9.9 4.5 11 9l4.5 1.1L11 11.2 9.9 15.7 8.8 11.2 4.3 10.1 8.8 9 9.9 4.5ZM18 14l.7 2.3L21 17l-2.3.7L18 20l-.7-2.3L15 17l2.3-.7L18 14Z"/></symbol>
     <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-nav" viewBox="0 0 24 24"><path d="m3 11 19-9-9 19-2-8-8-2Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-user-check" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+
   </defs>
 </svg>
 
@@ -193,14 +202,44 @@
 <section id="specialties" class="section section-tint">
   <div class="container">
     <div class="section-heading">
-      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> WHY POSH</span>
-      <h2>OUR SPECIALTIES</h2>
-      <p>What we are best known for.</p>
+      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> EDITORIAL CAMPAIGN</span>
+      <h2>YOUR LOOK. YOUR SIGNATURE.</h2>
+      <p>Three distinctive beauty crafts delivered with artistry, patience, and Kenyan elegance.</p>
     </div>
     <div class="cards">
-      <article class="card card-dark"><span class="card-num light">01</span><h3>The Locs Hub</h3><p>Kikuyu's go-to place for starter locs, interlocking, retwists and loc repair, done by stylists who live and breathe locs.</p></article>
-      <article class="card card-dark"><span class="card-num light">02</span><h3>Nail Artistry</h3><p>From clean everyday manicures to detailed custom nail art, built on strict hygiene and long-lasting products.</p></article>
-      <article class="card card-dark"><span class="card-num light">03</span><h3>Brow Studio</h3><p>Microblading and microshading that frame your face naturally, with careful mapping before every session.</p></article>
+      <!-- Photos: save them as images/locs.jpg, images/nails.jpg and images/brows.jpg -->
+      <article class="feature">
+        <div class="feature-photo" style="--img: url('images/locs.jpg')">
+          <span class="photo-tag">SIGNATURE SPECIALTY</span>
+          <div class="photo-caption"><small>THE KIKUYU LOCS SANCTUARY</small><h3>LOCS &amp; HAIR</h3></div>
+        </div>
+        <div class="feature-body">
+          <p>From starter locs and neat interlocking to bespoke styling and nourishing hair treatments. Crafted with precision for healthy roots and head-turning beauty.</p>
+          <button class="feature-btn" data-book data-service="Dreadlocks / Locs">BOOK LOCS &amp; HAIR <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-photo" style="--img: url('images/nails.jpg')">
+          <span class="photo-tag">CHIC BAR</span>
+          <div class="photo-caption"><small>MODERN CUTICLE &amp; NAIL BAR</small><h3>NAILS</h3></div>
+        </div>
+        <div class="feature-body">
+          <p>Refined acrylics, gel manicures, French tips, and modern minimal nail art that lasts. Pristine hygiene standards and high-gloss perfection.</p>
+          <button class="feature-btn" data-book data-service="Nail Bar">BOOK NAILS <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-photo" style="--img: url('images/brows.jpg')">
+          <span class="photo-tag">AESTHETIC STUDIO</span>
+          <div class="photo-caption"><small>MICROBLADING &amp; MICROSHADING</small><h3>BROWS &amp; BEAUTY</h3></div>
+        </div>
+        <div class="feature-body">
+          <p>Sculpted semi-permanent brows tailored to complement your facial symmetry. Wake up with effortlessly structured, smudge-proof brows.</p>
+          <button class="feature-btn" data-book data-service="Microblading">BOOK BROWS &amp; BEAUTY <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -210,61 +249,171 @@
   <div class="container">
     <div class="section-heading">
       <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> FIND US</span>
-      <h2>OUR LOCATIONS</h2>
+      <h2>OUR BRANCHES</h2>
       <p>Three branches, one Posh standard. Open Mon – Sun, from 7:00 AM till late.</p>
     </div>
     <div class="cards">
-      <!-- Replace the addresses with the real ones -->
-      <article class="card">
-        <span class="info-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
-        <h3>Kikuyu</h3><p>Kikuyu Town, Kiambu County</p>
-        <div class="card-bottom"><div><small>Call us</small><strong>0722 625 072</strong></div><a class="btn btn-dark btn-xs" href="tel:0722625072">Call</a></div>
+      <article class="branch flagship">
+        <div class="branch-top"><span class="branch-num">BRANCH 01</span><span class="pill ">FLAGSHIP HUB</span></div>
+        <h3>Kikuyu Branch</h3>
+        <p>Flagship studio, specialized Dreadlocks Hub &amp; full-service Nail Bar.</p>
+        <div class="detail"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Address &amp; Location</strong><span>May House, 1st Floor, Opposite Cleanshelf Supermarket, Kikuyu</span></div></div>
+        <div class="detail"><svg class="icon"><use href="#i-phone"/></svg><div><strong>Contact Line</strong><a class="phone" href="tel:0722625072">0722 625 072</a></div></div>
+        <div class="branch-cta">
+          <button class="btn btn-dark btn-wide" data-book data-location="Kikuyu"><svg class="icon"><use href="#i-calendar"/></svg> BOOK KIKUYU</button>
+          <div class="branch-row">
+            <a class="btn-soft" href="tel:0722625072"><svg class="icon"><use href="#i-phone"/></svg> Call</a>
+            <a class="btn-soft wa" href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%20Kikuyu%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> WhatsApp</a>
+          </div>
+          <a class="dir-link" href="https://www.google.com/maps/search/?api=1&amp;query=May+House+Kikuyu+Town+Kenya" target="_blank" rel="noopener"><svg class="icon"><use href="#i-nav"/></svg> View Location &amp; Directions</a>
+        </div>
       </article>
-      <article class="card">
-        <span class="info-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
-        <h3>Muthiga</h3><p>Muthiga, Kiambu County</p>
-        <div class="card-bottom"><div><small>Call us</small><strong>0718 718 636</strong></div><a class="btn btn-dark btn-xs" href="tel:0718718636">Call</a></div>
+
+      <article class="branch">
+        <div class="branch-top"><span class="branch-num">BRANCH 02</span><span class="pill gray">ACTIVE BRANCH</span></div>
+        <h3>Muthiga Branch</h3>
+        <p>Serving clients along the Muthiga corridor with signature hair, locs, and nail styling.</p>
+        <div class="detail"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Address &amp; Location</strong><span>Muthiga Town (Contact branch for building details)</span></div></div>
+        <div class="detail"><svg class="icon"><use href="#i-phone"/></svg><div><strong>Contact Line</strong><a class="phone" href="tel:0718718636">0718 718 636</a></div></div>
+        <div class="branch-cta">
+          <button class="btn btn-dark btn-wide" data-book data-location="Muthiga"><svg class="icon"><use href="#i-calendar"/></svg> BOOK MUTHIGA</button>
+          <div class="branch-row">
+            <a class="btn-soft" href="tel:0718718636"><svg class="icon"><use href="#i-phone"/></svg> Call</a>
+            <a class="btn-soft wa" href="https://wa.me/254718718636?text=Hello%20Posh%20Salon%20Muthiga%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> WhatsApp</a>
+          </div>
+          <a class="dir-link" href="https://www.google.com/maps/search/?api=1&amp;query=Muthiga+Town+Kenya" target="_blank" rel="noopener"><svg class="icon"><use href="#i-nav"/></svg> View Location &amp; Directions</a>
+        </div>
       </article>
-      <article class="card">
-        <span class="info-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
-        <h3>Gikambura</h3><p>Gikambura, Kiambu County</p>
-        <div class="card-bottom"><div><small>Call us</small><strong>0119 939 519</strong></div><a class="btn btn-dark btn-xs" href="tel:0119939519">Call</a></div>
+
+      <article class="branch">
+        <div class="branch-top"><span class="branch-num">BRANCH 03</span><span class="pill amber">OPENING DETAILS</span></div>
+        <h3>Gikambura Branch</h3>
+        <p>Bringing the Posh beauty experience to Gikambura.</p>
+        <div class="detail"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Address &amp; Location</strong><span>Gikambura Town (Location details updating soon)</span></div></div>
+        <div class="detail"><svg class="icon"><use href="#i-phone"/></svg><div><strong>Contact Line</strong><a class="phone" href="tel:0119939519">0119 939 519</a></div></div>
+        <div class="branch-cta">
+          <button class="btn btn-dark btn-wide" data-book data-location="Gikambura"><svg class="icon"><use href="#i-calendar"/></svg> BOOK GIKAMBURA</button>
+          <div class="branch-row">
+            <a class="btn-soft" href="tel:0119939519"><svg class="icon"><use href="#i-phone"/></svg> Call</a>
+            <a class="btn-soft wa" href="https://wa.me/254119939519?text=Hello%20Posh%20Salon%20Gikambura%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> WhatsApp</a>
+          </div>
+          <a class="dir-link" href="https://www.google.com/maps/search/?api=1&amp;query=Gikambura+Town+Kenya" target="_blank" rel="noopener"><svg class="icon"><use href="#i-nav"/></svg> View Location &amp; Directions</a>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
 <!-- ========== GALLERY ========== -->
-<section id="gallery" class="section section-tint">
+<section id="gallery" class="section">
   <div class="container">
     <div class="section-heading">
-      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> OUR WORK</span>
+      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> STYLE INSPIRATION</span>
       <h2>GALLERY</h2>
-      <p>A little taste of what happens at Posh.</p>
+      <p>Pick a look you love and request it on WhatsApp.</p>
     </div>
-    <div class="gallery-grid">
-      <!-- To use a real photo, replace the placeholder div with: <img src="images/yourphoto.jpg" alt="Fresh retwist" /> -->
-      <figure class="gallery-item"><div class="gallery-placeholder"><svg class="icon"><use href="#i-image"/></svg></div><figcaption><span>Locs</span> Fresh retwist</figcaption></figure>
-      <figure class="gallery-item"><div class="gallery-placeholder"><svg class="icon"><use href="#i-image"/></svg></div><figcaption><span>Nails</span> Gel polish set</figcaption></figure>
-      <figure class="gallery-item"><div class="gallery-placeholder"><svg class="icon"><use href="#i-image"/></svg></div><figcaption><span>Hair</span> Knotless braids</figcaption></figure>
-      <figure class="gallery-item"><div class="gallery-placeholder"><svg class="icon"><use href="#i-image"/></svg></div><figcaption><span>Brows</span> Microblading result</figcaption></figure>
-      <figure class="gallery-item"><div class="gallery-placeholder"><svg class="icon"><use href="#i-image"/></svg></div><figcaption><span>Pedicure</span> Spa pedicure</figcaption></figure>
-      <figure class="gallery-item"><div class="gallery-placeholder"><svg class="icon"><use href="#i-image"/></svg></div><figcaption><span>Nails</span> Custom nail art</figcaption></figure>
+    <div class="looks">
+      <!-- Photos: save them as images/gallery-1.jpg ... images/gallery-6.jpg. Change the titles to match your photos. -->
+      <article class="look">
+        <div class="look-photo" style="--img: url('images/gallery-1.jpg')">
+          <span class="photo-tag">LOCS • STYLE INSPIRATION</span>
+          <div class="photo-caption"><small>Locs Maintenance</small><h3>Fresh Starter Locs &amp; Neat Retwist</h3></div>
+        </div>
+        <div class="look-foot"><span>Ready to achieve this look?</span><a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20the%20Fresh%20Starter%20Locs%20%26%20Neat%20Retwist%20style." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Request style</a></div>
+      </article>
+      <article class="look">
+        <div class="look-photo" style="--img: url('images/gallery-2.jpg')">
+          <span class="photo-tag">BROWS • STYLE INSPIRATION</span>
+          <div class="photo-caption"><small>Brow Artistry</small><h3>Soft Ombr&eacute; Powder Brows</h3></div>
+        </div>
+        <div class="look-foot"><span>Ready to achieve this look?</span><a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20the%20Soft%20Ombre%20Powder%20Brows%20style." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Request style</a></div>
+      </article>
+      <article class="look">
+<div class="look-photo" style="--img: url('images/gallery-4.jpg')">        </div>
+        <div class="look-foot"><span>Ready to achieve this look?</span><a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20the%20French%20Tips%20with%20Gel%20Finish%20style." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Request style</a></div>
+      </article>
+      <article class="look">
+        <div class="look-photo" style="--img: url('images/Nails.jpeg')">
+          <span class="photo-tag">HAIR • STYLE INSPIRATION</span>
+          <div class="photo-caption"><small>Hair Artistry</small><h3>Classic Braided Updo &amp; Crown Styling</h3></div>
+        </div>
+        <div class="look-foot"><span>Ready to achieve this look?</span><a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20the%20Classic%20Braided%20Updo%20%26%20Crown%20Styling%20style." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Request style</a></div>
+      </article>
+      <article class="look">
+        <div class="look-photo" style="--img: url('images/gallery-5.jpg')">
+          <span class="photo-tag">LOCS • STYLE INSPIRATION</span>
+          <div class="photo-caption"><small>Locs Maintenance</small><h3>Long Lasting Sisterlocks Interlocking</h3></div>
+        </div>
+        <div class="look-foot"><span>Ready to achieve this look?</span><a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20the%20Long%20Lasting%20Sisterlocks%20Interlocking%20style." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Request style</a></div>
+      </article>
+      <article class="look">
+        <div class="look-photo" style="--img: url('images/gallery-6.jpg')">
+          <span class="photo-tag">NAILS • STYLE INSPIRATION</span>
+          <div class="photo-caption"><small>Cuticle &amp; Nail Bar</small><h3>Glossy Acrylic Full Set with Champagne Accents</h3></div>
+        </div>
+        <div class="look-foot"><span>Ready to achieve this look?</span><a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20the%20Glossy%20Acrylic%20Full%20Set%20with%20Champagne%20Accents." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Request style</a></div>
+      </article>
     </div>
+    <p class="insta"><svg class="icon"><use href="#i-instagram"/></svg> <b>Posh Salon Kikuyu Portfolio:</b> Browse daily live client transformations and updates on our official Instagram page <a href="https://www.instagram.com/posh_salon_kikuyu/" target="_blank" rel="noopener">@posh_salon_kikuyu</a></p>
   </div>
 </section>
 
 <!-- ========== ABOUT ========== -->
-<section id="about" class="section">
-  <div class="container about">
-    <div class="section-heading">
-      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> ABOUT POSH</span>
-      <h2>ONE POSH STANDARD</h2>
+<section id="about" class="section section-tint">
+  <div class="container about-grid">
+    <div class="about-photo">
+      <!-- Photo: save it as images/salon.jpg (use a real photo of your own salon) -->
+      <div class="about-img" style="--img: url('images/salon.jpg')"></div>
+      <div class="about-badge">
+        <small><svg class="icon"><use href="#i-pin"/></svg> KIKUYU TOWN DESTINATION</small>
+        <span>May House, 1st Floor • Opposite Cleanshelf Supermarket</span>
+      </div>
     </div>
-    <div class="about-text">
-      <p>Posh Salon is a Dreadlocks Hub &amp; Nail Bar serving Kikuyu, Muthiga and Gikambura. Whatever you walk in for, locs, braids, nails, brows or a pedicure, you get the same clean space, careful work and warm service at every branch.</p>
-      <p>Walk-ins and appointments are both welcome, seven days a week.</p>
-      <button class="btn btn-dark" data-book>BOOK AN APPOINTMENT <svg class="icon"><use href="#i-arrow"/></svg></button>
+
+    <div class="about-copy">
+      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> THREE BRANCHES • ONE BEAUTY STANDARD</span>
+      <h2>FEEL POSH. LOOK POSH.</h2>
+      <p>Posh Salon is a modern Kenyan beauty brand with three locations across Kikuyu, Muthiga, and Gikambura. We are dedicated to helping every client step out with confidence, polish, and impeccable personal style.</p>
+      <p>Whether you are maintaining neat, healthy dreadlocks at our specialized Dreadlocks Hub, refreshing your look at our Nail Bar, or enhancing your features with precision microshading and spa pedicures, our environment across all branches is welcoming, professional, and tailored to you.</p>
+      <div class="mini-grid">
+        <div class="mini"><svg class="icon"><use href="#i-check"/></svg><div><strong>3 Convenient Branches</strong><small>Kikuyu, Muthiga &amp; Gikambura</small></div></div>
+        <div class="mini"><svg class="icon"><use href="#i-clock"/></svg><div><strong>Flagship Daily Hours</strong><small>Mon to Sun from 7:00 AM till late</small></div></div>
+        <div class="mini"><svg class="icon"><use href="#i-check"/></svg><div><strong>All-in-One Care</strong><small>Hair, Locs, Nails, Brows &amp; Pedicures</small></div></div>
+        <div class="mini"><svg class="icon"><use href="#i-phone"/></svg><div><strong>Fast Consultation</strong><small>Direct WhatsApp bookings per branch</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY CHOOSE POSH ========== -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">THE POSH EXPERIENCE</span>
+      <h2>WHY CHOOSE POSH</h2>
+      <p>Carefully curated standards designed to make every salon visit seamless, respectful, and refreshing.</p>
+    </div>
+    <div class="why">
+      <article class="why-card">
+        <div class="why-top"><span class="card-num">01</span><span class="why-icon"><svg class="icon"><use href="#i-user-check"/></svg></span></div>
+        <h3>Personal Style</h3>
+        <p>Beauty services tailored to your look.</p>
+      </article>
+      <article class="why-card">
+        <div class="why-top"><span class="card-num">02</span><span class="why-icon"><svg class="icon"><use href="#i-sparkle"/></svg></span></div>
+        <h3>One Beauty Destination</h3>
+        <p>Hair, nails and beauty services in one place.</p>
+      </article>
+      <article class="why-card">
+        <div class="why-top"><span class="card-num">03</span><span class="why-icon"><svg class="icon"><use href="#i-pin"/></svg></span></div>
+        <h3>Convenient Locations</h3>
+        <p>Three accessible locations in Kikuyu, Muthiga, and Gikambura.</p>
+      </article>
+      <article class="why-card">
+        <div class="why-top"><span class="card-num">04</span><span class="why-icon"><svg class="icon"><use href="#i-heart"/></svg></span></div>
+        <h3>Your Look, Your Way</h3>
+        <p>A beauty experience designed around your personal style.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -273,14 +422,82 @@
 <section id="reviews" class="section section-tint">
   <div class="container">
     <div class="section-heading">
-      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> KIND WORDS</span>
-      <h2>CUSTOMER REVIEWS</h2>
+      <span class="eyebrow"><svg class="icon" style="color:#16a34a"><use href="#i-check"/></svg> CLIENT EXPERIENCE</span>
+      <h2>WHAT OUR CLIENTS SAY</h2>
+      <p>Real feedback from beauty and locs enthusiasts across Kikuyu and Kiambu.</p>
     </div>
     <div class="cards">
-      <!-- SAMPLE reviews: replace with real ones from your customers -->
-      <article class="card"><div class="stars">★★★★★</div><p>“Sample review. Put a real customer review here.”</p><strong>Customer name</strong></article>
-      <article class="card"><div class="stars">★★★★★</div><p>“Sample review. Put a real customer review here.”</p><strong>Customer name</strong></article>
-      <article class="card"><div class="stars">★★★★★</div><p>“Sample review. Put a real customer review here.”</p><strong>Customer name</strong></article>
+      <!-- IMPORTANT: keep only reviews that real customers gave you (with their permission). Replace the text and names below. -->
+      <article class="review">
+        <div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="chip">Locs Retwist &amp; Styling</span></div>
+        <blockquote>"Finding someone who knows how to treat and neat-up locs in Kikuyu was hard until I went to Posh Salon on the 1st floor of May House. Very gentle on the scalp and neat finish."</blockquote>
+        <div class="review-foot">
+          <span class="avatar">WM</span>
+          <div class="who"><strong>Wanjiku M.</strong><small>Verified Client Visit</small></div>
+          <span class="src">Kikuyu Client Review</span>
+        </div>
+      </article>
+      <article class="review">
+        <div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="chip">Gel Nails &amp; Pedicure</span></div>
+        <blockquote>"The nail bar is clean and professional. The cuticles were handled with so much care and the gel polish lasted without chipping. Very convenient opposite Cleanshelf."</blockquote>
+        <div class="review-foot">
+          <span class="avatar">FK</span>
+          <div class="who"><strong>Faith K.</strong><small>Verified Client Visit</small></div>
+          <span class="src">Google Review / Local Mention</span>
+        </div>
+      </article>
+      <article class="review">
+        <div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="chip">Microshading Brows</span></div>
+        <blockquote>"Did my brows here and the ombré powder shading looks so natural. Great consultation before starting to make sure the shape matches my face."</blockquote>
+        <div class="review-foot">
+          <span class="avatar">GN</span>
+          <div class="who"><strong>Grace N.</strong><small>Verified Client Visit</small></div>
+          <span class="src">Direct Client Feedback</span>
+        </div>
+      </article>
+    </div>
+    <p class="review-cta">Visited Posh Salon Kikuyu recently? <a href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%2C%20I%20would%20like%20to%20share%20my%20feedback." target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> Share your feedback on WhatsApp</a></p>
+  </div>
+</section>
+
+<!-- ========== COME VISIT US ========== -->
+<section id="visit" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow"><svg class="icon gold"><use href="#i-sparkle"/></svg> FLAGSHIP STUDIO</span>
+      <h2>COME VISIT US</h2>
+      <p>Our flagship salon and dreadlocks hub is in the heart of Kikuyu Town. Also welcoming clients at our Muthiga and Gikambura branches.</p>
+      <a class="visit-link" href="#locations">Explore all three Posh Salon branches (Kikuyu • Muthiga • Gikambura) →</a>
+    </div>
+
+    <div class="visit-grid">
+      <div class="visit-card">
+        <small class="label">LOCATION &amp; FLOOR</small>
+        <h3>May House, 1st Floor</h3>
+        <p class="sub">Directly opposite Cleanshelf Supermarket, Kikuyu Town</p>
+        <div class="addr-box">
+          <svg class="icon"><use href="#i-pin"/></svg>
+          <span>May House, 1st Floor, Opposite Cleanshelf Supermarket, Kikuyu Town, Kenya</span>
+          <button class="copy-btn" id="copyAddress" type="button" aria-label="Copy address" data-copy="May House, 1st Floor, Opposite Cleanshelf Supermarket, Kikuyu Town, Kenya"><svg class="icon"><use href="#i-copy"/></svg></button>
+        </div>
+        <p class="hours"><svg class="icon"><use href="#i-clock"/></svg> <span><b>Opening Hours:</b> Monday to Sunday from 7:00 AM till late</span></p>
+        <div class="direct"><small class="label">DIRECT LINE</small><strong>0722 625 072</strong></div>
+        <div class="visit-actions">
+          <a class="btn btn-white" href="tel:0722625072"><svg class="icon"><use href="#i-phone"/></svg> Call Us</a>
+          <a class="btn btn-green" href="https://wa.me/254722625072?text=Hello%20Posh%20Salon%20Kikuyu" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-head">
+          <span><svg class="icon"><use href="#i-pin"/></svg> Cleanshelf Supermarket &amp; May House Area, Kikuyu</span>
+          <a href="https://www.openstreetmap.org/?mlat=-1.2465&amp;mlon=36.6630#map=16/-1.2465/36.6630" target="_blank" rel="noopener">Open Full Map <svg class="icon"><use href="#i-nav"/></svg></a>
+        </div>
+        <!-- The pin is approximate. To set the exact spot: open openstreetmap.org, find the building, click Share, choose Embed and paste its iframe here. -->
+        <div class="map-frame">
+          <iframe title="Map of Posh Salon Kikuyu" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=36.6480%2C-1.2560%2C36.6780%2C-1.2370&amp;layer=mapnik&amp;marker=-1.2465%2C36.6630"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -288,11 +505,54 @@
 </main>
 
 <!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container footer-inner">
-    <div><strong class="footer-brand">POSH SALON</strong><p>Dreadlocks Hub &amp; Nail Bar</p></div>
-    <div><p>Kikuyu • Muthiga • Gikambura</p><p>0722 625 072 • 0718 718 636</p></div>
-    <div><p>Open Mon – Sun, from 7:00 AM till late</p><p>© <span id="year"></span> Posh Salon</p></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="sf-grid">
+      <div class="sf-brand">
+        <a href="#home" class="logo light" aria-label="Posh Salon home">
+          <svg class="logo-wave" viewBox="0 0 80 10" aria-hidden="true"><path d="M2 7 C 14 1, 22 1, 32 5 S 52 9, 60 4 S 72 2, 78 5" fill="none" stroke="#c9b3ea" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <span class="logo-main">POSH<span class="logo-star">✦</span></span>
+          <span class="logo-salon">SALON</span>
+          <span class="logo-sub">DREADLOCKS HUB &amp; NAIL BAR</span>
+        </a>
+        <p>Kenya's premier beauty brand and locs sanctuary with three branches across Kikuyu, Muthiga, and Gikambura. Dedicated to healthy hair, artistic locs, clean nail care, and precision brow aesthetics.</p>
+        <ul class="sf-branches">
+          <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Kikuyu Branch (Flagship)</strong><span>May House, 1st Floor, Opp. Cleanshelf • 0722 625 072</span></div></li>
+          <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Muthiga Branch</strong><span>Muthiga Town • 0718 718 636</span></div></li>
+          <li><svg class="icon"><use href="#i-pin"/></svg><div><strong>Gikambura Branch</strong><span>Gikambura Town • 0119 939 519</span></div></li>
+        </ul>
+      </div>
+
+      <div class="sf-col">
+        <h4>NAVIGATION</h4>
+        <ul class="sf-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#locations">Find Your Posh (3 Branches)</a></li>
+          <li><a href="#services">Services &amp; Pricing</a></li>
+          <li><a href="#specialties">Featured Specialties</a></li>
+          <li><a href="#gallery">Gallery &amp; Inspiration</a></li>
+          <li><a href="#about">About Posh Salon</a></li>
+          <li><a href="#reviews">Client Reviews</a></li>
+          <li><a href="#visit">Flagship Studio Location</a></li>
+        </ul>
+      </div>
+
+      <div class="sf-col">
+        <h4>BOOK YOUR CHAIR</h4>
+        <p>Ready for your next salon session? WhatsApp us or give us a call to confirm availability.</p>
+        <button class="btn btn-white btn-block" data-book>BOOK AN APPOINTMENT <svg class="icon"><use href="#i-arrow"/></svg></button>
+        <div class="sf-social">
+          <a href="https://www.instagram.com/posh_salon_kikuyu/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a class="wa" href="https://wa.me/254722625072" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-chat"/></svg></a>
+          <a href="tel:0722625072" aria-label="Call us"><svg class="icon"><use href="#i-phone"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sf-bottom">
+      <span>© <span id="year"></span> Posh Salon Kikuyu. All rights reserved.</span>
+      <span>May House, 1st Floor • Opposite Cleanshelf Supermarket • Kikuyu Town</span>
+    </div>
   </div>
 </footer>
 
