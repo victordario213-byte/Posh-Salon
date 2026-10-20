@@ -292,6 +292,22 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .modal-done { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 12px 0; }
 .big-tick { width: 56px; height: 56px; border-radius: 50%; background: #dcfce7; color: #16a34a; font-size: 30px; display: flex; align-items: center; justify-content: center; }
 
+/* ---------- Photo service cards and kid-friendly banner ---------- */
+.card-photo { padding: 0; overflow: hidden; }
+.card-img { position: relative; aspect-ratio: 16 / 10; background-image: var(--img), linear-gradient(160deg, #4a1a6e 0%, #8b5cc6 70%, #c9b3ea 100%); background-size: cover; background-position: center; }
+.card-img .photo-tag { top: 14px; left: 14px; font-size: 11px; padding: 6px 12px; }
+.card-body { padding: 28px 30px 30px; display: flex; flex-direction: column; flex: 1; }
+.card-body > p { font-size: 15.5px; color: #5d5870; }
+.card-body .chips { margin-bottom: 24px; }
+.card-body .card-bottom { margin-top: auto; }
+
+.kids-banner { margin-top: 32px; display: flex; align-items: center; gap: 18px; padding: 22px 28px; border-radius: 20px; background: #fff8e8; border: 1px solid #f3dca8; }
+.kids-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: #fdeab8; color: #a05a00; flex-shrink: 0; }
+.kids-icon .icon { font-size: 22px; }
+.kids-banner strong { display: block; font-family: var(--serif); font-size: 21px; color: var(--ink); }
+.kids-banner p { font-size: 14.5px; color: #6a6479; margin-top: 2px; }
+.kids-banner .btn { margin-left: auto; flex-shrink: 0; }
+
 /* ---------- Mobile / tablet ---------- */
 @media (max-width: 1024px) {
   .nav { gap: 18px; }
@@ -345,4 +361,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   .direct strong { font-size: 28px; }
   .map-head { flex-direction: column; align-items: flex-start; }
   .look-foot { flex-wrap: wrap; }
+  .card-body { padding: 22px; }
+  .kids-banner { flex-direction: column; align-items: flex-start; padding: 22px; }
+  .kids-banner .btn { margin-left: 0; }
 }
