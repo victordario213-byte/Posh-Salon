@@ -123,6 +123,14 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .stars { color: var(--gold); letter-spacing: 3px; margin-bottom: 14px; }
 .card > strong { margin-top: 18px; color: var(--ink); font-size: 14px; }
 
+/* ---------- Kid-friendly banner ---------- */
+.kids-banner { margin-top: 32px; display: flex; align-items: center; gap: 18px; padding: 22px 28px; border-radius: 20px; background: #fff8e8; border: 1px solid #f3dca8; }
+.kids-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: #fdeab8; color: #a05a00; flex-shrink: 0; }
+.kids-icon .icon { font-size: 22px; }
+.kids-banner strong { display: block; font-family: var(--serif); font-size: 21px; color: var(--ink); }
+.kids-banner p { font-size: 14.5px; color: #6a6479; margin-top: 2px; }
+.kids-banner .btn { margin-left: auto; flex-shrink: 0; }
+
 /* ---------- WhatsApp banner ---------- */
 .wa-banner { margin-top: 44px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 34px 40px; border-radius: 20px; color: #fff; background: linear-gradient(100deg, #2a1040 0%, #3d1259 60%, #451a6b 100%); }
 .wa-banner h3 { font-family: var(--serif); font-weight: 600; font-size: 24px; margin-bottom: 6px; }
@@ -292,23 +300,14 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .modal-done { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 12px 0; }
 .big-tick { width: 56px; height: 56px; border-radius: 50%; background: #dcfce7; color: #16a34a; font-size: 30px; display: flex; align-items: center; justify-content: center; }
 
-/* ---------- Photo service cards and kid-friendly banner ---------- */
-.card-photo { padding: 0; overflow: hidden; }
-.card-img { position: relative; aspect-ratio: 16 / 10; background-image: var(--img), linear-gradient(160deg, #4a1a6e 0%, #8b5cc6 70%, #c9b3ea 100%); background-size: cover; background-position: center; }
-.card-img .photo-tag { top: 14px; left: 14px; font-size: 11px; padding: 6px 12px; }
-.card-body { padding: 28px 30px 30px; display: flex; flex-direction: column; flex: 1; }
-.card-body > p { font-size: 15.5px; color: #5d5870; }
-.card-body .chips { margin-bottom: 24px; }
-.card-body .card-bottom { margin-top: auto; }
-
-.kids-banner { margin-top: 32px; display: flex; align-items: center; gap: 18px; padding: 22px 28px; border-radius: 20px; background: #fff8e8; border: 1px solid #f3dca8; }
-.kids-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: #fdeab8; color: #a05a00; flex-shrink: 0; }
-.kids-icon .icon { font-size: 22px; }
-.kids-banner strong { display: block; font-family: var(--serif); font-size: 21px; color: var(--ink); }
-.kids-banner p { font-size: 14.5px; color: #6a6479; margin-top: 2px; }
-.kids-banner .btn { margin-left: auto; flex-shrink: 0; }
-
 /* ---------- Mobile / tablet ---------- */
+@media (max-width: 1100px) {
+  .why { grid-template-columns: repeat(2, 1fr); }
+  .looks { grid-template-columns: repeat(2, 1fr); }
+  .visit-grid { grid-template-columns: 1fr; }
+  .sf-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .sf-brand { grid-column: 1 / -1; }
+}
 @media (max-width: 1024px) {
   .nav { gap: 18px; }
   .nav a { font-size: 14px; }
@@ -321,47 +320,31 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: #fff; border-bottom: 1px solid var(--border); padding: 8px 24px 16px; }
   .nav.open { display: flex; }
   .nav a { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 16px; }
-  .hero-grid, .about { grid-template-columns: 1fr; gap: 40px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero { padding: 40px 0 56px; }
   .hero-photo { height: 320px; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-inner { grid-template-columns: 1fr; }
   .wa-banner { flex-direction: column; align-items: flex-start; }
-}
-@media (max-width: 600px) {
-  .container { width: calc(100% - 32px); }
-  .cards, .gallery-grid, .info-grid, .form-grid { grid-template-columns: 1fr; }
-  .section { padding: 64px 0; }
-  .card { padding: 26px; }
-  .hero-overlay { flex-direction: column; align-items: flex-start; }
-  .modal { padding: 26px 20px; }
-  .wa-banner { padding: 26px 22px; }
-  .logo-main { font-size: 17px; }
-}
-
-/* ---------- Mobile / tablet: new sections ---------- */
-@media (max-width: 1100px) {
-  .why { grid-template-columns: repeat(2, 1fr); }
-  .looks { grid-template-columns: repeat(2, 1fr); }
-  .visit-grid { grid-template-columns: 1fr; }
-  .sf-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-  .sf-brand { grid-column: 1 / -1; }
-}
-@media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-img { height: 320px; }
 }
 @media (max-width: 600px) {
+  .container { width: calc(100% - 32px); }
+  .cards, .info-grid, .form-grid { grid-template-columns: 1fr; }
   .why, .looks, .mini-grid, .sf-grid { grid-template-columns: 1fr; }
+  .section { padding: 64px 0; }
+  .card { padding: 26px; }
   .branch, .review { padding: 22px; }
   .review-foot { flex-wrap: wrap; }
   .src { margin-left: 0; width: 100%; text-align: left; }
+  .hero-overlay { flex-direction: column; align-items: flex-start; }
+  .modal { padding: 26px 20px; }
+  .wa-banner { padding: 26px 22px; }
+  .logo-main { font-size: 17px; }
   .visit-card { padding: 26px 22px; }
   .visit-actions { grid-template-columns: 1fr; }
   .direct strong { font-size: 28px; }
   .map-head { flex-direction: column; align-items: flex-start; }
   .look-foot { flex-wrap: wrap; }
-  .card-body { padding: 22px; }
   .kids-banner { flex-direction: column; align-items: flex-start; padding: 22px; }
   .kids-banner .btn { margin-left: 0; }
 }
