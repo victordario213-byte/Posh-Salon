@@ -79,7 +79,7 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 
 .hero-card { position: relative; border-radius: 26px; padding: 6px; background: #fff; box-shadow: 0 30px 60px -20px rgba(42,16,64,.35); }
 /* The photo goes in images/hero.jpg. The purple gradient shows until you add it. */
-.hero-photo { height: 400px; border-radius: 22px; background-image: url('images/TrysX.jpeg'), linear-gradient(160deg, #3b1456 0%, #6d28d9 55%, #a78bd6 100%); background-size: cover; background-position: center; }
+.hero-photo { height: 400px; border-radius: 22px; background-image: url('images/.jpeg'), linear-gradient(160deg, #3b1456 0%, #6d28d9 55%, #a78bd6 100%); background-size: cover; background-position: center; }
 .hero-overlay { position: absolute; left: 20px; right: 20px; bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: rgba(240,238,243,.94); backdrop-filter: blur(8px); border-radius: 16px; padding: 14px 18px; }
 .hero-overlay strong { display: block; font-size: 13px; letter-spacing: .04em; color: var(--ink); }
 .hero-overlay small { font-size: 12px; color: var(--muted); }
